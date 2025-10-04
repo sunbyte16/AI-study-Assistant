@@ -1,0 +1,34 @@
+{
+  "name": "ai-study-assistant",
+  "version": "1.0.0",
+  "description": "A full-stack AI-powered study assistant application with React frontend and Node.js backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backEnd && npm run start",
+    "client": "cd frontEnd && npm start",
+    "install-all": "npm install && cd backEnd && npm install && cd ../frontEnd && npm install",
+    "build": "cd frontEnd && npm run build",
+    "start": "cd backEnd && npm start"
+  },
+  "keywords": [
+    "ai",
+    "study-assistant",
+    "react",
+    "nodejs",
+    "mongodb",
+    "education",
+    "quiz",
+    "notes"
+  ],
+  "author": "Sunbyte16",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "workspaces": [
+    "backEnd",
+    "frontEnd"
+  ]
+}
+
